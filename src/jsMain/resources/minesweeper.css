@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Minesweeper';
+    src: url('./mine-sweeper.ttf');
+}
+
+div.selector input {
+    margin:5px;
+    width: 100px;
+}
+
+div.selector button {
+    margin:5px;
+    padding:5px;
+}
+
+table#mines {
+    border-spacing:0;
+    border: 3px solid darkgrey;
+}
+
+table#mines tbody {
+    border:1px solid black;
+}
+
+table#mines td {
+    padding:0;
+    margin:0;
+    border:0;
+}
+
+table#mines tr td button {
+    padding: 4px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: lightgrey;
+    border-bottom:3px solid darkgrey;
+    border-right:3px solid darkgrey;
+    border-top:3px solid lightgrey;
+    border-left:3px solid lightgrey;
+    display:block;
+    font-weight:bolder;
+    font-size:0.8em;
+    font-family: Minesweeper;
+}
+
+.b1 {
+    color: #0100fb;
+}
+
+.b2 {
+    color: #037e02;
+}
+
+.b3 {
+    color: #fd0100;
+}
+
+.b4 {
+    color: #010080;
+}
+
+.b5 {
+    color: #7f0102;
+}
+
+.b6 {
+    color: #007f7e;
+}
+
+.b7 {
+    color: #000000;
+}
+
+.b8 {
+    color: #808080;
+}
+
+table#mines tr td button:active {
+    background-color: whitesmoke;
+}
+
+table#mines tr td button.revealed {
+    background-color:whitesmoke;
+}
+
+table#mines tr td button.flagged {
+    background-color: red;
+}
